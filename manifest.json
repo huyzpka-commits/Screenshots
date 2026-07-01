@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Screenshot Pro",
+  "version": "1.0.0",
+  "description": "Clean, modern screenshot tool. Capture visible screen, full page, or selected area.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "downloads",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Screenshot Pro"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

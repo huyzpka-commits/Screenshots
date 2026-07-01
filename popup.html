@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <span class="logo">📸</span>
+      <h1>Screenshot Pro</h1>
+    </div>
+
+    <div class="mode-toggle">
+      <span class="mode-label">Output</span>
+      <div class="toggle-group">
+        <button id="modeDownload" class="toggle-btn active">⬇ Download</button>
+        <button id="modePreview" class="toggle-btn">👁 Preview</button>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="captureVisible" class="action-btn">
+        <span class="action-icon icon-visible">🖥️</span>
+        <div class="action-text">
+          <span class="action-title">Visible Area</span>
+          <span class="action-desc">Capture current viewport</span>
+        </div>
+      </button>
+
+      <button id="captureFull" class="action-btn">
+        <span class="action-icon icon-full">📄</span>
+        <div class="action-text">
+          <span class="action-title">Full Page</span>
+          <span class="action-desc">Capture entire scrollable page</span>
+        </div>
+      </button>
+
+      <button id="captureArea" class="action-btn">
+        <span class="action-icon icon-area">✂️</span>
+        <div class="action-text">
+          <span class="action-title">Selected Area</span>
+          <span class="action-desc">Drag to select a region</span>
+        </div>
+      </button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
